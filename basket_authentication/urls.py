@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include
-from .views import BasketAddress
+from .views import BasketAuth
 urlpatterns = [
-    path('basketauthentication/', BasketAddress.as_view(), name='blog'),
+    path('basketauthentication/', BasketAuth.as_view(), name='auth'),
 ]
